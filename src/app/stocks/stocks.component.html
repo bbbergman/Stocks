@@ -1,0 +1,12 @@
+<hr>
+<div class="container">
+  <div class="row">
+  <h3 style="color: dodgerblue"><Strong>{{ stock.stockName}}</Strong></h3>
+  <h5><Strong>Stock symbol:</Strong> {{ stock.stockSymbol}}</h5>
+  <h4> <Strong>Current stock value :{{ stock.currentValue}}</Strong> </h4>
+ <h5 [ngStyle]="{color:getColor()}">{{ stock.dailyTrend[2]}} ( {{ stock.dailyTrend[3]}}%)</h5>
+  <chart [options]='options' ></chart>
+    </div>
+</div>
+
+
